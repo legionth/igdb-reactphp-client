@@ -1,0 +1,21 @@
+{
+  "name": "legionth/igdb-reactphp",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Niels Theen",
+      "email": "niels.theen@googlemail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "Legionth\\React\\IGDB\\": "src/" }
+  },
+  "autoload-dev": {
+    "psr-4": { "Tests\\Legionth\\React\\IGDB\\": "tests/" }
+  },
+  "require": {
+    "php": ">=7.1",
+    "legionth/http-client-react": "^1.1.0",
+    "ringcentral/psr7": "^1.2"
+  }
+}
