@@ -501,7 +501,7 @@ class IgdbClient
                 });
 
                 $body->on('end', function () use (&$completeData, $resolve) {
-                    $array = json_decode($completeData);
+                    $array = json_decode($completeData, true);
                     $resolve($array);
                 });
             });
