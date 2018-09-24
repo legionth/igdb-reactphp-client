@@ -27,7 +27,7 @@ $igdbClient = new \Legionth\React\IGDB\IgdbClient($apiKey, $httpClient);
 $promise = $igdbClient->getAchievements(array(1440, 5000));
 
 $promise->then(function (array $array){
-    echo "Array: " . json_encode($array, JSON_PRETTY_PRINT) . 'LOL';
+    echo "Array: " . json_encode($array, JSON_PRETTY_PRINT);
 }, function (\Exception $exception) {
     echo $exception->getMessage();
 });
